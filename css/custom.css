@@ -34,6 +34,10 @@ lrg{
   background-image: url("../images/foliagesmall.jpg");
 }
 
+.navbar{
+  margin: 0px;
+}
+
 .table{
   margin-bottom: 0px;
 }
