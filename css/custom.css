@@ -1,9 +1,9 @@
 *{
-  font-family: Arial, Verdana, sans-serif;
+  font-family: serif;
 }
 
 .panel{
-  background-color: #c41428;
+  background-color: #b0b35f;
   margin-bottom: 0px;
 }
 
@@ -16,6 +16,9 @@ h2{
   font-size: 170%;
 }
 
+.row{
+  margin-bottom: 10px;
+}
 
 lrg{
   font-size: 150%;
@@ -28,14 +31,7 @@ lrg{
 .jumbotron{
   padding: 0px;
   margin: 0px;
-}
-
-.firstJumbo{
-  background-color:#528085;
-}
-
-.secondJumbo{
-  background-color: #e3ddcf;
+  background-image: url("../images/foliagesmall.jpg");
 }
 
 .table{
@@ -44,11 +40,6 @@ lrg{
 
 .terminaltable{
   margin-bottom: 20px;
-}
-
-.col-md-6{
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .table-striped>tbody>tr:nth-child(even) {
@@ -60,9 +51,6 @@ lrg{
    margin: 0px;
  }
 
- #liLarger{
-   font-size: 150%;
- }
 
  .importantLink{
    font-size: 200%;
@@ -73,7 +61,11 @@ lrg{
  }
 
  .jumbotron p{
-   font-size: 95%;
+   font-size: 130%;
+ }
+
+ .jumbotron p.large{
+   line-height: 2em;
  }
 
  .table.sideBar{
@@ -89,10 +81,15 @@ lrg{
    color: #fffffc;
  }
 
- .col-md-8, .col-md-9, .col-md-3{
-   background-color: #fffffc;
- }
-
 .container{
   background-color: #fffffc;
+}
+
+.blogpost{
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  padding: 5px;
+  background-color: #edf5b8;
 }
