@@ -33,11 +33,12 @@ p.centered{
 h1{
   color: #ffffff;
   text-align: center;
+  font-size: 400%;
 }
 
 
 h2{
-  font-size: 170%;
+  font-size: 200%;
 }
 
 .row{
@@ -109,9 +110,9 @@ li{
   padding-left: 40px;
 }
 
-.timeStamp{
+p.timeStamp{
   color: gray;
-  font-size: 20%;
+  font-size: 90%;
 }
 
 
@@ -153,11 +154,10 @@ img{
   font-size: 150%;
 }
 
-h1.cursive{
+.cursive{
   font-family: "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
   text-align: left;
   padding: 10px;
-  font-size: 400%;
 }
 
 .col-md-9{
@@ -171,4 +171,13 @@ h1.cursive{
 ul.nav-pills{
   text-align: center;
   height: 40px;
+}
+
+a:hover{
+  text-decoration: blink;
+}
+
+h2.panel-title{
+  font-size: 150%;
+  font-family: "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
 }
