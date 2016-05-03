@@ -5,7 +5,7 @@
 
 .container {
     background-color: #edf5b8;
-    padding: 0px;
+    padding: 30px;
 }
 
 .panel{
@@ -13,6 +13,7 @@
   margin: 0px;
   padding-left: 2px;
   padding-right: 2px;
+  padding-top: 0px;
 }
 
 p.centered{
@@ -95,33 +96,72 @@ li{
 
 .col-md-5{
   margin-left: 0px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
-.sideBar.container{
+/*.sideBar.container{
   background-color: #edf5b8;
   margin-right: 12px;
   padding-left: 20px;
   padding-right: 10px;
-}
+}*/
 
 .timeStamp{
   color: gray;
   font-size: 20%;
 }
 
-div.photobox{
+/*div.photobox{
+  align: center;
+  margin-right: 0px;
   background-color: black;
   width: 100%;
+  padding: 1
 
+}*/
+
+
+.col-md-3.photo{
+  background-color: #f5f5f5;
+  padding-top: 20px;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin-top: 20px;
+  margin-left: 0px;
+  box-shadow: 10px 10px 5px #888888;
 }
 
+.col-md-3.sideBar{
+  background-color: #f5f5f5;
+  padding: 0px;
+  border-radius: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  text-align: center;
+}
+
+
+.col-md-6{
+  padding: 30px;
+}
+
+/*.col-md-3.sideBar
+  background-color: #f5f5f5;
+  margin-left: 14px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 25px;
+  padding-left: 0px;
+  padding-right: 10px;
+  margin-top: 20px;
+}*/
+
 img{
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 0px;
-  border: 3px, black, solid;
+  padding: 20px;
+
 }
 
 .modal{
@@ -133,4 +173,9 @@ h1.cursive{
   text-align: left;
   padding: 10px;
   font-size: 400%;
+}
+
+
+.nav-pills{
+  text-align: center;
 }
