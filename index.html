@@ -20,8 +20,12 @@
     <![endif]-->
   </head>
 
+
+
 <body>
 <!-- Page Heading -->
+
+
 
     <!-- Navigation Bar -->
       <nav class="navbar navbar-inverse">
@@ -35,13 +39,49 @@
              <!-- Collect the nav links, forms, and other content for toggling -->
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
-                 <li> <!--Link to Home-->
-                    <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
-                 </li>
+                 <li><a href="index.html">About Me</a></li> <!--Link to Home-->
                  <li><a href="art.html">Art</a></li> <!--Link to Professors-->
                  <li><a href="music.html">Music</a></li> <!--Reserach Centers-->
                  <li><a href="literature.html">Literature</a></li> <!--Undergraduates-->
                  <li><a href="movies.html">Movies</a></li><!--Link to Events-->
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                  Contact Me
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                      </div>
+                      <div class="modal-body">
+                        If you have any comments are suggestions, please send me a message! I love to hear from others who share my interests.
+                      </br>
+                        <form action="http://formspree.io/gvenezia@wustl.edu" method="POST">
+                          <label for="name">Your Name</label>
+                          <input type="text" name="name" class="form-control form-input" placeholder="Full name" required>
+
+                              <div>
+                                  <label>Message:</label>
+                                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div>
+                          </form>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-primary" value="Send">
+                        <input type="hidden" name="_subject" value="New submission!" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    <!--end modal-->
               </ul>
              </div><!-- /.navbar-collapse -->
            </div><!-- /.container-fluid -->
@@ -57,10 +97,9 @@
     </div>  <!-- Close md-3 -->
     <div class="col-md-9">
       <h2> About Me: </h2>
-      <p class="large">I am a student at Washington University in St. Louis. In May, I will have a degree in Economics with a minor in French. I also have a strong science background
-        after following the pre-med track. I created this blog in order to keep track of my outside interests. Here I will post about movies, music, art, and litterature
-        that I come across. If you want to comment on any of my posts or get in touch with me, you can send me an email at <a href="mailto:gvenezia@wustl.edu">gvenezia@wustl.edu</a>.
-      </p>
+      <p class="large">I am a recent graduate from Washington University in St. Louis with a degree in Economics with a minor in French. I also followed the pre-med course track so I have a
+        background in the natural science. My life plans are still uncertain. As I search for meaning in my life, I want to archive the beautiful literature, art, music, and films that
+        speak to me. I hope my readers will appreciate my posts on asthetic level if not an existential one.</p>
       <div class="blogpost"> <p>My radio show continues: Listen <a href="http://mixlr.com/kwur-903" target="_blank">here</a> Thursday Evenings @6pm CT. Selected
       playlists will be archived under music</p></div>
     </div> <!--Close md-9> -->
