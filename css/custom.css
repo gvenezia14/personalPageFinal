@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body{
+  padding-top: 50px;
+}
+
 .container {
     background-color: #edf5b8;
     padding: 30px;
@@ -16,6 +20,10 @@
   padding-top: 0px;
   border-radius: 25px;
   box-shadow: -10px -10px 5px #888888;
+}
+
+.panel.footer{
+  box-shadow: none;
 }
 
 p.centered{
@@ -124,7 +132,7 @@ li{
   border-radius: 25px;
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 10px;
+  margin-top: 40px;
   text-align: center;
 }
 
