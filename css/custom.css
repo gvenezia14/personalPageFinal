@@ -122,8 +122,9 @@ li{
   padding-right: 5px;
   margin-top: 40px;
   margin-left: 0px;
+  margin-bottom: 0px;
   border-radius: 25px;
-  box-shadow: -10px -10px 5px #888888;
+  box-shadow: 5px 5px 2px #667F7F;
 }
 
 .col-md-3.sideBar{
@@ -139,6 +140,7 @@ li{
 
 .col-md-6{
   padding: 30px;
+  margin-bottom: 0px;
 }
 
 
@@ -160,6 +162,10 @@ h1.cursive{
 
 .col-md-9{
   margin-top: 40px;
+}
+
+.col-md-9.kwur{
+  margin: 0px;
 }
 
 ul.nav-pills{
