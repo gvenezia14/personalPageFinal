@@ -23,41 +23,85 @@
 <body>
 <!-- Page Heading -->
 
-    <!-- Navigation Bar -->
-      <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-             <!-- Collect the nav links, forms, and other content for toggling -->
-             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav">
-                 <li> <!--Link to Home-->
-                    <a href="index.html">About Me</a>
-                 </li>
-                 <li><a href="art.html">Art</a></li> <!--Link to Professors-->
-                 <li><a href="music.html">Music</a></li> <!--Reserach Centers-->
-                 <li><a href="literature.html">Literature</a></li> <!--Undergraduates-->
-                 <li><a href="movies.html">Movies</a></li><!--Link to Events-->
-              </ul>
-             </div><!-- /.navbar-collapse -->
-           </div><!-- /.container-fluid -->
-        </nav>
+<!-- Navigation Bar -->
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav">
+             <li><a href="index.html">About Me</a></li> <!--Link to Home-->
+             <li><a href="art.html">Art</a></li> <!--Link to Professors-->
+             <li><a href="music.html">Music</a></li> <!--Reserach Centers-->
+             <li><a href="literature.html">Literature</a></li> <!--Undergraduates-->
+             <li><a href="movies.html">Movies</a></li><!--Link to Events-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Contact Me
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Contact Form</h4>
+                  </div>
+                  <div class="modal-body">
+                    If you have any comments are suggestions, please send me a message! I love to hear from others who share my interests.
+                  </br>
+                    <form action="http://formspree.io/gvenezia@wustl.edu" method="POST">
+                    </br>
+                      <label for="name">Name:</label>
+                      <input type="text" name="name" class="form-control form-input" placeholder="Full name" required>
+                    </br>
+                      <label for="email">Email:</label>
+                      <input type="text" name="email" class="form-control form-input" placeholder="Email" required>
+                    </br>
+                          <div>
+                              <label>Message:</label>
+                              <textarea class="form-control" rows="5" id="comment"></textarea>
+                          </div>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                          <input type="submit" class="btn btn-primary" value="Send">
+                          <input type="hidden" name="_subject" value="New submission!" />
+                        </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+                <!--end modal-->
+          </ul>
+         </div><!-- /.navbar-collapse -->
+       </div><!-- /.container-fluid -->
+    </nav>
 
 <div class="jumbotron">
   <div class="container">
+    <div class="panel">
+          <h1>Art</h1>
+            <p class="centered">A work of art which did not begin in emotion is not art. -Paul Cézanne</p>
+      </div>
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-9">
       <div class="blogpost">
         <h2>1970s Space Art:</h2> <p>Last week, the economist posted an <a href="https://www.1843magazine.com/ideas/the-daily/suburban-space-oddities" target="_blank">article</a>
           about the new "Bigelow Expandable Activity Module" for the International Space Station. They compared the module to some very imaginative designs from the 1970s
           depicted below by artist Don Davis. There is a more exhaustive list on the <a href="http://settlement.arc.nasa.gov/70sArtHiRes/70sArt/art.html" target="_blank">nasa website</a>.</p>
 
 
-          <div class="row">
+          <div class="row inpostborder">
              <div class="col-md-7">
                <img src="images/torus.jpg" alt="space cylinder" width="90%" />
              </div>
@@ -69,7 +113,7 @@
             </div>
           </div> <!-- Close row -->
 
-        <div class="row">
+        <div class="row inpostborder">
            <div class="col-md-7">
              <img src="images/SpaceCylinder.jpg" alt="space cylinder" width="90%" />
            </div>
@@ -80,29 +124,32 @@
           </div>
         </div> <!-- Close row -->
 
-        <div class="row">
+        <div class="row inpostborder">
            <div class="col-md-7">
              <img src="images/Bernal.jpg" alt="space cylinder" width="90%" />
            </div>
           <div class="col-md-5">
             <h3>Bernal Sphere</h3>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+            <p> This is a giant hollow spherical shell that could hold up to twenty to thirty thousand people. Its rotation would create a gravitational force at the equator equal to Earth's.
+              Inside, the people would live in a circular valley, which wraps around the interior of the equator. Sunlight would be reflected by mirrors at the sphere's poles. </p>
           </div>
         </div> <!-- Close row -->
 
-
-
+        <p class="timeStamp">Posted at 4:35PM April 25th, 2016</p>
     </div> <!-- Close blogpost -->
-  </div> <!-- Close col-md-8 -->
+  </div> <!-- Close col-md-9 -->
 
 
-    <div class="col-md-2 menu">
-      <h3>Links to Other Sites</h3>
+    <div class="col-md-3">
+      <div class="container sideBar">
+      <h4>Links to Other Sites</h4>
         <ul class="list-group">
-          <li class="list-group-item"><a href="http://radiooooo.com/#" target="_blank">Radiooooooo</a></li>
+          <li class="list-group-item"><a href="http://radiooooo.com/" target="_blank">Radiooooooo</a></li>
+          <li class="list-group-item"><a href=" http://www.partiallyexaminedlife.com/" target="_blank">Partially Examined Life</a></li>
+          <li class="list-group-item"><a href="http://www.johnderbyshire.com/" target="_blank">JohnDerbyshire Blog</a></li>
         </ul>
+      </div>
     </div>
-
 
 
   </div> <!-- Close row -->
