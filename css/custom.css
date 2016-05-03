@@ -17,7 +17,7 @@
 }
 
 .panel.homepage{
-  background-color: #edf5b8; 
+  background-color: #edf5b8;
 }
 
 p.centered{
@@ -33,6 +33,7 @@ h1.cursive{
   font-family: "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
   text-align: left;
   padding: 10px;
+  font-size: 400%;
 }
 
 h2{
@@ -125,9 +126,8 @@ li{
   font-size: 20%;
 }
 
-.col-md-3{
-  padding: 10px;
-  margin: 10px;
+img{
+  padding: 30px;
 }
 
 .modal{
