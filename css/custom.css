@@ -4,20 +4,15 @@
 }
 
 .container {
-    padding-right: 0px;
-    padding-left: 0px;
     background-color: #edf5b8;
+    padding: 0px;
 }
 
 .panel{
-  background-color: #d7ffbd;
-  margin-bottom: 0px;
+  background-color: #ffffed;
+  margin: 0px;
   padding-left: 2px;
   padding-right: 2px;
-}
-
-.panel.homepage{
-  background-color: #edf5b8;
 }
 
 p.centered{
@@ -29,12 +24,6 @@ h1{
   text-align: center;
 }
 
-h1.cursive{
-  font-family: "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
-  text-align: left;
-  padding: 10px;
-  font-size: 400%;
-}
 
 h2{
   font-size: 170%;
@@ -53,7 +42,7 @@ lrg{
 }
 
 .jumbotron{
-  padding: 0px;
+  padding: 20px;
   margin: 0px;
   background-image: url("../images/foliagesmall.jpg");
 }
@@ -66,8 +55,6 @@ lrg{
 li{
   font-size: 120%;
 }
-
-
 
  .importantLink{
    font-size: 200%;
@@ -85,12 +72,9 @@ li{
    line-height: 2em;
  }
 
-
-
- .jumbotron .h1{
+ .jumbotron.h1{
    color: #fffffc;
  }
-
 
 .blogpost{
   margin-top: 0px;
@@ -126,10 +110,27 @@ li{
   font-size: 20%;
 }
 
+div.photobox{
+  background-color: black;
+  width: 100%;
+
+}
+
 img{
-  padding: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+  border: 3px, black, solid;
 }
 
 .modal{
   font-size: 150%;
+}
+
+h1.cursive{
+  font-family: "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
+  text-align: left;
+  padding: 10px;
+  font-size: 400%;
 }
