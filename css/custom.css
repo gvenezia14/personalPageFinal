@@ -181,3 +181,8 @@ h2.panel-title{
   font-size: 150%;
   font-family: "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
 }
+
+.funky{
+  font-family: "Brush Script MT", cursive;
+  font-size: 200%;
+}
